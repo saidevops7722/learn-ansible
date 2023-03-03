@@ -18,3 +18,14 @@
         msg: URL = {{ URL }}
 
 
+
+- name: task level variables
+  hosts: localhost
+  tasks:
+    - name: print play variable
+      vars:
+        URL: task.example.com
+      ansible.builtin.debug:
+        msg: URL = {{ URL }}
+
+

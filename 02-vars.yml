@@ -11,7 +11,7 @@
 - name: Play Variables from files
   hosts: localhost
   vars_files:
-    -var.yml
+    - var.yml
   tasks:
     - name: print play variable from file
       ansible.builtin.debug:

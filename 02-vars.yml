@@ -16,3 +16,4 @@
     - name: print play variable from file
       ansible.builtin.debug:
         msg: URL = {{ URL }}
+
